@@ -16,3 +16,8 @@ import { createStore } from 'redux';
 const store = createStore( ) // this takes a reducer, but best practice is for this to go in a store dir.
 
 reducer is created in separate file and then imported to index.js
+
+import { Provider } from 'react-redux;
+
+wrap your root:
+ReactDOM.render(<Provider store= {store}><App /></Provider> , document.getElementById("root"));
